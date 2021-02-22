@@ -41,11 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RegistryKeySerializableAttribute.cs" />
-    <Compile Include="RegistrySectionSerializableAttribute.cs" />
-    <Compile Include="RegistrySerializer.cs" />
+    <Compile Include="RegistryInteractions\Generic\SectionManager.cs" />
+    <Compile Include="RegistryInteractions\SectionManager.cs" />
+    <Compile Include="RegistryInteractions\SubSectionManager.cs" />
+    <Compile Include="RegistryInteractions\SubSectionManagerCollection.cs" />
+    <Compile Include="RegistrySerializationAttributes\RegistryKeySerializableAttribute.cs" />
+    <Compile Include="RegistrySerializationAttributes\RegistrySectionSerializableAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrySubSectionSerializableAttribute.cs" />
+    <Compile Include="RegistrySerializationAttributes\RegistrySubSectionSerializableAttribute.cs" />
+    <Compile Include="RegistrySerializer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
